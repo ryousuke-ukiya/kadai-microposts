@@ -7,7 +7,7 @@
         </aside>
         <div class="col-sm-8">
             @include('users.navtabs', ['user' => $user])
-            @include('users.favorite_microposts', ['users' => $users,'microposts' => $microposts])
+            @include('users.favorite_microposts', ['user' => $user,'microposts' => $microposts,])
         </div>
     </div>
 @endsection
